@@ -8,6 +8,6 @@ fi
 
 if [ ! -e $HOME/nin_bn_final.t7 ];then
   echo Will download nin_bn_final.t7 , WARNING: 33.1MB!
-  curl -L https://github.com/vfonov/deep-pi/releases/download/v1/nin_bn_final.t7 -o $HOME/nin_bn_final.t7
+  curl -L https://www.dropbox.com/s/mclw90yba6eml60/nin_bn_final.t7 -o $HOME/nin_bn_final.t7
   echo Downloaded $HOME/nin_bn_final.t7
 fi
