@@ -6,13 +6,8 @@ if [ ! -e $HOME/words_1000_ascii.t7 ];then
   echo Downloaded $HOME/words_1000_ascii.t7
 fi
 
-if [ ! -e $HOME/nin_bn_final_arm.t7 ];then
-  echo Will download nin_bn_final_arm.t7 , WARNING: 33.1MB!
-  curl -L https://github.com/vfonov/deep-pi/releases/download/v1/nin_bn_final_arm.t7 -o $HOME/nin_bn_final_arm.t7
-  echo Downloaded $HOME/nin_bn_final_arm.t7
+if [ ! -e $HOME/nin_bn_final.t7 ];then
+  echo Will download nin_bn_final.t7 , WARNING: 33.1MB!
+  curl -L https://github.com/vfonov/deep-pi/releases/download/v1/nin_bn_final.t7 -o $HOME/nin_bn_final.t7
+  echo Downloaded $HOME/nin_bn_final.t7
 fi
-
-
-
-
-  

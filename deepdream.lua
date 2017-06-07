@@ -12,7 +12,7 @@ local input_img='frame.jpg' --
 -- load pre-trained model
 local prefix=os.getenv("HOME")..'/'
 
-local m=torch.load( prefix..'nin_bn_final_arm.t7' )
+local m=torch.load( prefix..'nin_bn_final.t7' )
 net=m:unpack()
 cls=m.classes
 

@@ -10,7 +10,7 @@ torch.setdefaulttensortype('torch.FloatTensor')
 -- load pre-trained model
 local prefix=os.getenv("HOME")..'/'
 local t = torch.Timer()
-local m=torch.load(prefix..'nin_bn_final_arm.t7')
+local m=torch.load(prefix..'nin_bn_final.t7')
 print(string.format("loading model: %.2fsec",t:time().real))
 
 local model=m:unpack()
