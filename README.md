@@ -17,7 +17,7 @@ After ./install.sh is finished - it will ask if you want to update .bashrc to in
 You can install various torch example from https://github.com/torch/demos, here is an output from MNIST digit classieifer training session:
 
 ```
-pi:~/src/demos/train-a-digit-classifier $ th train-on-mnist.lua 
+bash-3.2:~/src/demos/train-a-digit-classifier $ th train-on-mnist.lua 
 <torch> set nb of threads to 4	
 <mnist> using model:	
 nn.Sequential {
@@ -42,15 +42,14 @@ nn.Sequential {
 <trainer> online epoch # 1 [batchSize = 10]	
  [===================>.................... 471/2000 ....................................]  ETA: 2m20s | Step: 92ms      
 ```
-Overall it is about 5 times slower then running the same example on a desktop with Core i5 @  3.30GHz without using GPU. 
 
 ### Installing deep-macos
 ```
 git clone https://github.com/jdonald/deep-macos 
 ```
-After that you can launch `download_net.sh` script to download the pretrained NIN network ( based on https://gist.github.com/szagoruyko/0f5b4c5e2d2b18472854 ) to the `/home/pi` path. **WARNING** pretrained network is 33Mb file!
+After that you can launch `download_net.sh` script to download the pretrained NIN network ( based on https://gist.github.com/szagoruyko/0f5b4c5e2d2b18472854 ) to your `$HOME` path. **WARNING** pretrained network is 33Mb file!
 
-You must install a *camera* luarocks package tweaked to work on macOS.
+You must install a **camera** luarocks package tweaked to work on macOS.
 ```
 luarocks install https://raw.githubusercontent.com/jdonald/lua---camera/master/camera-1.1-0.rockspec
 ```
